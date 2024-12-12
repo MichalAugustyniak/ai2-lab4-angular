@@ -1,0 +1,12 @@
+<a href="/add">
+  <button>New person</button>
+</a>
+<ul>
+  <li *ngFor="let person of personArray; let index = index">
+    <a href="/details/{{index}}">
+    {{person.firstName}}
+    {{person.familyName}}
+    </a>&nbsp;
+  [<a href="#" (click)="delete(index)">Delete</a>]
+  </li>
+</ul>

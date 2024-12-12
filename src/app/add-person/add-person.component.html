@@ -1,0 +1,21 @@
+<form name="person" (ngSubmit)="save()">
+  <label for="firstName">First name:</label>
+  <input type="text" id="firstName" [(ngModel)]="person.firstName" name="firstName">
+  <br>
+  <label for="familyName">Family name:</label>
+  <input type="text" id="familyName" [(ngModel)]="person.familyName" name="familyName">
+  <br>
+  <label for="age">Age:</label>
+  <input type="text" id="age" [(ngModel)]="person.age" name="age">
+  <br>
+  <label for="street">Street:</label>
+  <input type="text" id="street" [(ngModel)]="person.address.street" name="address.street">
+  <br>
+  <label for="city">City:</label>
+  <input type="text" id="city" [(ngModel)]="person.address.city" name="address.city">
+  <br>
+  <label for="postCode">Post code:</label>
+  <input type="text" id="postCode" [(ngModel)]="person.address.postCode" name="address.postCode">
+  <br>
+  <button type="submit">Save</button>
+</form>
